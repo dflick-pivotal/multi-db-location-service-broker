@@ -1,0 +1,6 @@
+---
+applications:
+- name: db-broker
+  memory: 512M
+  instances: 1
+  path: build/libs/multi-db-location-service-broker.war
