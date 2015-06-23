@@ -33,11 +33,11 @@ public class DBBrokerServiceInstanceBindingService implements
 		ServiceInstanceBinding binding = null;
 				
 		Map<String,Object> credentials = new HashMap<String,Object>();
-		if(planId.contentEquals(location_x_db_info))
+		if(planId.contentEquals("location-x"))
 			credentials.put("uri", location_x_db_info);
-		if(planId.contentEquals(location_y_db_info))
+		if(planId.contentEquals("location-y"))
 			credentials.put("uri", location_y_db_info);
-		if(planId.contentEquals(location_z_db_info))
+		if(planId.contentEquals("location-z"))
 			credentials.put("uri", location_z_db_info);
 	    
 		if(binding == null)
