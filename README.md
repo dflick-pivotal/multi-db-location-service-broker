@@ -9,17 +9,15 @@
 6. execute: cf create-service-broker db-broker user password <uri to service broker app>
 7. execute: cf enable-service-access db-broker (You could add which plan should be available for which org)
 8. execute: cf marketplace
-
-Griffon:multi-db-location-service-broker dflick$ cf marketplace
-´´´
+```
 service      plans                                 description   
 db-broker    location-x, location-y, location-z*   Provides db connection strings  
 ```
 9. execute: create service db-broker location-x mydbconnection
 10. push the app of your choice and bind the service
 11. execute: cf env <app> 
-
-```System-Provided:
+```
+System-Provided:
 {
  "VCAP_SERVICES": {
   "db-broker": [
@@ -37,5 +35,6 @@ db-broker    location-x, location-y, location-z*   Provides db connection string
    }
   ]
  }
-}```
+}
+```
 
