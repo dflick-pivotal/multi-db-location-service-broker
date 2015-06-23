@@ -31,7 +31,7 @@ System-Provided:
   "db-broker": [
    {
     "credentials": {
-**     "uri": "oracle://root:secret@dbserver.location_x.com:1521/mydatabase"
+     "uri": "oracle://root:secret@dbserver.location_x.com:1521/mydatabase"
     },
     "label": "db-broker",
     "name": "mydbconnection",
