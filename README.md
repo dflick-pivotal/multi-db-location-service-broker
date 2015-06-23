@@ -11,21 +11,15 @@
 8. execute: cf marketplace
 
 Griffon:multi-db-location-service-broker dflick$ cf marketplace
-Getting services from marketplace in org pivotal / space development as admin...
-OK
-
+´´´
 service      plans                                 description   
 db-broker    location-x, location-y, location-z*   Provides db connection strings  
-
+```
 9. execute: create service db-broker location-x mydbconnection
 10. push the app of your choice and bind the service
 11. execute: cf env <app> 
 
-Griffon:groovy dflick$ cf env app
-Getting env variables for app app in org pivotal / space development as admin...
-OK
-
-System-Provided:
+```System-Provided:
 {
  "VCAP_SERVICES": {
   "db-broker": [
@@ -43,5 +37,5 @@ System-Provided:
    }
   ]
  }
-}
+}```
 
